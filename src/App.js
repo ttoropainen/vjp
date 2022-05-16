@@ -1,6 +1,5 @@
 import './App.css';
 
-
 function App() {
   return (
     <div className="App">
@@ -18,10 +17,24 @@ function App() {
                 </nav>
         </section>
         <section id="koti">
-        </section>
-        <section id="quiz">
+          <div className="container">
+            <h2>Sisäänheittoteksti!</h2>
+            <div>
+              <iframe
+                width="853"
+                height="480"
+                src={`https://www.youtube.com/embed/9WGq040-yww`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Embedded youtube"
+              />
+            </div>
+          </div>
         </section>
         <section id="info">
+        </section>
+        <section id="quiz">
         </section>
         <section id="blogit">
             <div class = "blog"> 
@@ -50,6 +63,9 @@ function App() {
         </section>
       </div>
       </header>
+      <footer className="footer">
+        <img alt="logo" src="img/kioski.png"></img>
+      </footer>
     </div>
   );
 }
