@@ -83,7 +83,13 @@ function App() {
         <section id="somet">
         </section>
         <section id="slogan">
+<<<<<<< HEAD
+=======
+          <div class="slogani">
+            <h1 id="slogan-text">Buy nice not twice.</h1>
+          </div>
           <img src="img/slogan/earth 2.svg"/>
+>>>>>>> 5f4b27bea40dfeb8629651785bf76c82d531a5a1
         </section>
       </div>
       </header>
