@@ -59,7 +59,6 @@ function App() {
         <section id="somet">
         </section>
         <section id="slogan">
-          <img src="img/slogan/earth 2.svg"/>
         </section>
       </div>
       </header>
