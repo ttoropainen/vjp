@@ -8,11 +8,11 @@ function App() {
         <section id="navigation">
                 <nav>
                 <ul>
-                    <li><a href="#koti">koti</a></li>
-                    <li><a href="#quiz">quiz</a></li>
-                    <li><a href="#info">info</a></li> 
-                    <li><a href="#blogit">blogit</a></li>
-                    <li><a href="#some">some</a></li>
+                    <li><a href='#koti'>koti</a></li>
+                    <li><a href='#quiz'>quiz</a></li>
+                    <li><a href='#info'>info</a></li> 
+                    <li><a href='#blogit'>blogit</a></li>
+                    <li><a href='#somet'>somet</a></li>
                 </ul>
                 </nav>
         </section>
@@ -37,11 +37,20 @@ function App() {
         <section id="quiz">
         </section>
         <section id="blogit">
-          <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nibh eu luctus mattis. Donec tincidunt sollicitudin enim rutrum vulputate. Phasellus quam elit, accumsan nec est et, posuere tempus odio. In ac felis aliquam, bibendum orci non, dapibus augue. Pellentesque bibendum consectetur nisi, ac porta elit tincidunt in. Aliquam nunc massa, eleifend non tortor sit amet, pellentesque bibendum augue. Maecenas vitae sollicitudin ipsum. Pellentesque arcu justo, molestie at justo sit amet, luctus pellentesque ligula.
-                Nullam tincidunt commodo augue, pulvinar laoreet mauris sollicitudin maximus. Nam pellentesque vestibulum arcu, quis aliquet turpis malesuada ut. Praesent vel aliquet lectus. Fusce eu odio nec ex convallis sodales. Nunc luctus, erat non laoreet congue, mi quam elementum risus, sit amet rutrum metus elit aliquet leo. Sed scelerisque vitae elit congue ullamcorper. Nam iaculis urna lectus, et posuere mi maximus eu. Suspendisse nec metus eu ex venenatis dapibus
+          <div class = "blog"> <h1>Kirpparikierros Helsingissä</h1>
+          <p>Helsinki on täynnä mielenkiintoisia kirpputoreja, joita on tullut vain lisää viime vuosien aikana. Kaupungista löytyy vintage-liikkeita, kahvilallisia trendikirppiksiä, edullisia kierrätyskeskuksia ja suuria katukirppiksiä. Laajasta valikoimasta voi jokainen löytää itselleen mahtavia löytöjä. Tule mukaamme kiertämään Helsingin kiinnostavimmat kirpputorit!</p>
+          <button class="lisaa">Lue lisää</button> 
+          </div>
+          <div class = "blog"> <h1>Näin pidät hyvää huolta vaatteistasi</h1>
+          <p>Hyvin huolletut vaatteet kestävät pidempään, mistä kiittää niin lompakko kuin ympäristökin. Pesemällä vaatteet sopivissa lämpötiloissa samanväristen vaatteiden seassa, tahrojen oikeaoppisella puhdistamisella ja huolellisella ripustamisella sekä paikkaamisella pysyvät vaatteet kunnossa vuosi toisensa jälkeen. Näillä helpoilla vinkeillä saat lempivaatteesi kestämään aikaa.</p>
+          <button class="lisaa">Lue lisää</button>
+          </div>
+          <div class = "blog"> <h1>Sertifaattien selitykset - aitoa ekologisuutta vai viherpesua?</h1>
+          <p>Vihreät tarrat, puiden kuvat ja kestävyyttä mainostavat lauseet koristavat vaatteiden hintalappuja monien muotiliikkeiden hyllyillä. Monet pikamuotiliikkeet kuuluttavat vaatteidensa vihreyttä itse keksimillään sertifikaateilla, jotka eivät kerro vielä mitään vaatteen todellisesta ekologisuudesta tai eettisyydestä. On kuitenkin olemassa myös monia kansainvälistä tunnustusta saaneita sertifikaatteja, jotka takaavat vaatteen valmistusketjun olevan edes hieman normaalia kestävämpi. Miten kuluttaja voi tunnistaa todellisuudessa ekologisemman valinnan viherpesusta?</p>
+          <button class="lisaa">Lue lisää</button>
           </div>
         </section>
-        <section id="some">
+        <section id="somet">
         </section>
         <section id="slogan">
         </section>
