@@ -79,6 +79,12 @@ nav {
   align-items: center;
 }
 
+nav ul {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
 #blogit {
   max-width: 100%;
   font-size: large;

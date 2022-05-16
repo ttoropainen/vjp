@@ -6,15 +6,15 @@ function App() {
       <header className="App-header">
       <div id="container">
         <section id="navigation">
-                <nav>
-                <ul>
-                    <li><a href='#koti'>koti</a></li>
-                    <li><a href='#quiz'>quiz</a></li>
-                    <li><a href='#info'>info</a></li> 
-                    <li><a href='#blogit'>blogit</a></li>
-                    <li><a href='#somet'>somet</a></li>
-                </ul>
-                </nav>
+          <nav>
+            <ul>
+                <li><a href='#koti'>koti</a></li>
+                <li><a href='#quiz'>quiz</a></li>
+                <li><a href='#info'>info</a></li> 
+                <li><a href='#blogit'>blogit</a></li>
+                <li><a href='#somet'>somet</a></li>
+            </ul>
+          </nav>
         </section>
         <section id="koti">
           <div className="container">
