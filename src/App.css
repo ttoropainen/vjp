@@ -125,13 +125,28 @@ nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  height: auto;
 }
 
 .blog {
   flex-basis: 100%;
   padding: 0px 40px;
+  width: 33%;
 }
 
+@media only screen and (max-width: 980px) {
+  #blogit {
+    width: 100%;
+    display: block;
+  }
+  .blog {
+    width: 100%;
+  }
+}
+
+.blog h1 {
+  font-size: 32px;
+}
 .blog p {
   font-size: 22px;
 }
