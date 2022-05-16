@@ -50,6 +50,8 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 section {
@@ -61,6 +63,7 @@ section {
   background-color: #000000;
   scroll-snap-align: center;
   max-height: 100%;
+  max-width: 100%;
 }
 
 #navigation {
@@ -94,29 +97,42 @@ section {
     text-align: center;
   }
 
-  #blogit {
-    max-width: 100%;
-    font-size: large;
-  }
+#blogit {
+  font-family: 'Open Sans';
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-  .blog {
-    text-align: justify;
-    padding: 5%;
+.blog {
+  font-size: large;  
+  text-align: justify;
+  width:25%;
+  margin:2%;
+}
 
-  }
+.blogimage {
+  max-width: 100%;
+}
 
-  .lisaa {
-      background-color: #ffffff;
-      border: none;
-      color: rgb(0, 0, 0);
-      padding: 7px 15px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 5%;
-      text-align: center;
-  }
+#blogit h1 {
+
+}
+
+#blogit button {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
 
 
 
