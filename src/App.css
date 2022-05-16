@@ -102,6 +102,43 @@ nav ul {
   justify-content: space-between;
 }
 
+  .lisaa {
+      background-color: #ffffff;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 7px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5%;
+      text-align: center;
+  }
+  
+  #slogan{
+    background-image: url("../public/img/slogan/earth2.svg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 50%;
+    align-items: center;
+  }
+
+  #slogan-text{
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 8vw;
+    line-height: 158px;
+
+    color: #00C463;
+
+    mix-blend-mode: hard-light;
+    text-shadow: 1px 6px 0px #E5E5E5;
+
+  }
+  
+
 .container {
   display: flex;
   flex-wrap: wrap;
