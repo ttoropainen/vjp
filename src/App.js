@@ -40,6 +40,9 @@ function App() {
         <section id="somet">
         </section>
         <section id="slogan">
+          <div class="slogani">
+            <h1 id="slogan-text">Buy nice not twice.</h1>
+          </div>
         </section>
       </div>
       </header>
