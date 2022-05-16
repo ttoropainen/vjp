@@ -1,4 +1,5 @@
 import './App.css';
+import Quiz from './Quiz'
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
         </section>
         <section id="quiz">
           <div className="quiz">
-            TEE QUIZZI TÄSSÄ
+            <Quiz/>
           </div>
         </section>
         <section id="blogit">
@@ -86,7 +87,6 @@ function App() {
           <div class="slogani">
             <h1 id="slogan-text">Buy nice not twice.</h1>
           </div>
-          <img src="img/slogan/earth 2.svg"/>
         </section>
       </div>
       </header>
