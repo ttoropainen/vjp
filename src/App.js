@@ -33,6 +33,11 @@ function App() {
             </div>
           </div>
         </section>
+        <section id="quiz">
+          <div className="quiz">
+            <Quiz/>
+          </div>
+        </section>
         <section id="info">
           <div className="container">
             <div className="textPieces">
@@ -56,11 +61,6 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="quiz">
-          <div className="quiz">
-            <Quiz/>
-          </div>
-        </section>
         <section id="blogit">
             <div class = "blog"> 
               <img src="img/blogit/kirpparikierros.png" alt="Kirpparikierros" class="blogimage"/>
@@ -82,6 +82,10 @@ function App() {
             </div>
         </section>
         <section id="somet">
+          <img alt="tiktok" src="img/somet/1200px-TikTok_logo.png" />
+          <img alt="facebook" src="img/somet/facebook.png"/>
+          <img alt="youtube" src="img/somet/youtube.png" />
+          <img alt="twitter" src="img/somet/twitter.png"/>
         </section>
         <section id="slogan">
           <div class="slogani">
@@ -91,7 +95,7 @@ function App() {
       </div>
       </header>
       <footer className="footer">
-        <img alt="logo" src="img/kioski.png"></img>
+        <img alt="kioski-logo" src="img/kioski.png"></img>
       </footer>
     </div>
   );
