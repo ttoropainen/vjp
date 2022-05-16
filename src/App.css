@@ -47,6 +47,7 @@ a {
 #container {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -91,6 +92,30 @@ section {
     list-style-type: none;
     font-family: 'Open Sans';
     text-align: center;
+  }
+
+  #blogit {
+    max-width: 100%;
+    font-size: large;
+  }
+
+  .blog {
+    text-align: justify;
+    padding: 5%;
+
+  }
+
+  .lisaa {
+      background-color: #ffffff;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 7px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5%;
+      text-align: center;
   }
 
 
