@@ -158,6 +158,10 @@ nav ul {
   text-align: center;
 }
 
+#somet img {
+  cursor: pointer;
+}
+
 #tiktok {
   width: 22%;
   position: relative;
