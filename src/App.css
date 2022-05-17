@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
 
 .App {
   text-align: center;
@@ -49,30 +50,29 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  max-height: 100%;
-  max-width: 100%;
 }
+
 
 section {
   flex: none;
-  display: flex;
   justify-content: center;
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background-color: #000000;
   scroll-snap-align: center;
-  max-height: 100%;
+  max-height: 100vh;
   max-width: 100%;
 }
 
 #navigation {
   position: fixed;
-  height: 50px;
+  height: 80px;
   background-color: #000000;
   color: #ffffff;
   border: 0;
   z-index: 6;
   letter-spacing: 0.625rem;
+  font-family: 'Open Sans';
 }
 
 nav {
@@ -92,63 +92,30 @@ ul {
 
 li {
   list-style-type: none;
-  font-family: 'Open Sans';
   text-align: center;
 }
 
 nav ul {
-  width: 100vw;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-  .lisaa {
-      background-color: #ffffff;
-      border: none;
-      color: rgb(0, 0, 0);
-      padding: 7px 15px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 5%;
-      text-align: center;
-  }
-  
-  #slogan{
-    background-image: url("../public/img/slogan/earth2.svg");
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: 50%;
-    align-items: center;
-  }
-
-  #slogan-text{
-    display: flex;
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 900;
-    font-size: 8vw;
-    line-height: 158px;
-
-    color: #00C463;
-
-    mix-blend-mode: hard-light;
-    text-shadow: 1px 6px 0px #E5E5E5;
-
-  }
-  
+.quiz {
+  height: 100vh;
+  padding: 0;
+}
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  width: 100%;
+  height: 100vh;
 }
 .container h2 {
   width: 100%;
-  margin-top: 140px;
+  margin-top: 100px;
   font-size: 84px;
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -158,24 +125,92 @@ nav ul {
   border: 3px solid #fff;
 }
 
+
 #blogit {
-  font-family: 'Open Sans';
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 0px 40px;
+  height: 100%;
 }
 
 .blog {
-  font-size: large;
-  text-align: justify;
   flex-basis: 100%;
-  padding: 20px;
+  padding: 0px 40px;
+  width: 33%;
+}
+
+.lisaa {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+  text-align: center;
+}
+
+#somet {
+  display: flex;
+  align-items: center;
+}
+
+#somet img {
+  width: 15%;
+}
+
+#slogan {
+  background-image: url('../public/img/slogan/earth2.svg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+#slogan img {
+  height: auto;
+}
+
+#slogan-text {
+  display: flex;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 8vw;
+  line-height: 158px;
+  color: #00c463;
+  mix-blend-mode: hard-light;
+  text-shadow: 1px 6px 0px #e5e5e5;
+}
+
+
+
+
+@media only screen and (max-width: 980px) {
+  #blogit {
+    width: 100%;
+    display: block;
+  }
+  .blog {
+    width: 100%;
+  }
+}
+
+.blog h1 {
+  font-size: 20px;
+}
+.blog p {
+  font-size: 15px;
 }
 
 .blogimage {
-  max-width: 100%;
+  width: 100%;
 }
 
 #blogit button {
@@ -201,4 +236,32 @@ nav ul {
 
 .footer img {
   width: 260px;
+}
+
+.textPieces {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.textPieces p {
+  font-size: 44px;
+  padding: 20px;
+}
+.textPieces div p {
+  font-size: 33px;
+  width: auto;
+}
+.bold {
+  font-size: 66px;
+  font-weight: bold;
+}
+.quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
