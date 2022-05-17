@@ -1,6 +1,6 @@
 import './App.css';
 import Quiz from './Quiz'
-import InstagramEmbed from 'react-instagram-embed';
+
 
 function App() {
   return (
@@ -40,27 +40,27 @@ function App() {
           </div>
         </section>
         <section id="info">
-          {/* <div className="container">
+          <div className="container">
             <div className="textPieces">
-              <p style={{backgroundColor:'#86D3AD'}}>Vaateteollisuus aiheuttaa</p>
-              <div>
-                <p><span className="bold">10%</span> Maailman hiilidioksidipäästöistä</p>
-                <p><span className="bold">20%</span> Maailman jätevedestä</p>
-                <p><span className="bold">35%</span> Ympäristöön päästettävistä muovihiukkasista</p>
-              </div><br/>
-              <p style={{backgroundColor:'#628BC7'}}>Yksi T-paita</p>
-              <div>
+            <div className='info'>
+                <p style={{backgroundColor:'#628BC7'}}>Yksi T-paita</p>
                 <p>Tarvitsee valmistuakseen</p>
                 <span className="bold">2700</span>
                 <p>litraa vettä</p>
               </div>
-              <p style={{backgroundColor:'#DA8C53'}}>JOS</p>
-              <div>
+              <div className='info'>
+                <p style={{backgroundColor:'#86D3AD'}}>Vaateteollisuus aiheuttaa</p>
+                <p><span className="bold">10%</span> Maailman hiilidioksidipäästöistä</p>
+                <p><span className="bold">20%</span> Maailman jätevedestä</p>
+                <p><span className="bold">35%</span> Ympäristöön päästettävistä muovihiukkasista</p>
+              </div><br/>
+              <div className='info'>
+                <p style={{backgroundColor:'#DA8C53'}}>JOS</p>
                 <p>Käytät <span className="bold">2x</span> pidempään</p>
                 <p>aiheutat <span className="bold">44%</span> vähemmän päästöjä</p>
               </div>
             </div>
-          </div> */}
+          </div>
         </section>
         <section id="blogit">
             <div class = "blog"> 
@@ -84,19 +84,6 @@ function App() {
         </section>
         <section id="somet">
           <div id = "ig"> 
-            <InstagramEmbed
-              clientAccessToken='<appId>|<clientToken>'
-              url='https://instagr.am/p/Zw9o4/'
-              maxWidth={375}
-              hideCaption={false}
-              containerTagName='div'
-              injectScript
-              protocol=''
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
-            />
           </div>
             <img alt="tiktok" src="img/somet/1200px-TikTok_logo.png" id = "tiktok"/>
             <img alt="facebook" src="img/somet/facebook.png" id = "facebook"/>
