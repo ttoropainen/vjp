@@ -177,7 +177,7 @@ nav ul {
   height: auto;
 }
 
-#slogan-text {
+.slogan-span {
   display: flex;
   font-family: 'Montserrat';
   font-style: italic;
@@ -187,7 +187,54 @@ nav ul {
   color: #00c463;
   mix-blend-mode: hard-light;
   text-shadow: 1px 6px 0px #e5e5e5;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  
 }
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slogan-span{
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.slogan-span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.slogan-span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.slogan-span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.slogan-span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.slogan-span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    
+  }
+}
+
+
+
 
 
 
