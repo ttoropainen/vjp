@@ -1,5 +1,6 @@
 import './App.css';
 import Quiz from './Quiz'
+import InstagramEmbed from 'react-instagram-embed';
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
           </div>
         </section>
         <section id="info">
-          <div className="container">
+          {/* <div className="container">
             <div className="textPieces">
               <p style={{backgroundColor:'#86D3AD'}}>Vaateteollisuus aiheuttaa</p>
               <div>
@@ -59,7 +60,7 @@ function App() {
                 <p>aiheutat <span className="bold">44%</span> vähemmän päästöjä</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         <section id="blogit">
             <div class = "blog"> 
@@ -82,10 +83,25 @@ function App() {
             </div>
         </section>
         <section id="somet">
-          <img alt="tiktok" src="img/somet/1200px-TikTok_logo.png" />
-          <img alt="facebook" src="img/somet/facebook.png"/>
-          <img alt="youtube" src="img/somet/youtube.png" />
-          <img alt="twitter" src="img/somet/twitter.png"/>
+          <div id = "ig"> 
+            <InstagramEmbed
+              clientAccessToken='<appId>|<clientToken>'
+              url='https://instagr.am/p/Zw9o4/'
+              maxWidth={375}
+              hideCaption={false}
+              containerTagName='div'
+              injectScript
+              protocol=''
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            />
+          </div>
+            <img alt="tiktok" src="img/somet/1200px-TikTok_logo.png" id = "tiktok"/>
+            <img alt="facebook" src="img/somet/facebook.png" id = "facebook"/>
+            <img alt="youtube" src="img/somet/youtube.png" id = "youtube"/>
+            <img alt="twitter" src="img/somet/twitter.png"id = "twitter"/>
         </section>
         <section id="slogan">
           <div class="slogani">
