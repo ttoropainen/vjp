@@ -1,6 +1,6 @@
 import './App.css';
 import Quiz from './Quiz'
-
+import InstagramEmbed from 'react-instagram-embed';
 
 function App() {
   return (
@@ -83,12 +83,20 @@ function App() {
             </div>
         </section>
         <section id="somet">
-          <div id = "ig"> 
-          </div>
+          <div id = "ig"> <br/><br/><br/>
+            <iframe width="80%" height="100%" src="https://www.instagram.com/p/CdoCvkZIblL/embed" frameborder="0"></iframe><br/>
+            <iframe width="80%" height="100%" src="https://www.instagram.com/p/CdoBNxBoUji/embed" frameborder="0"></iframe><br/>
+            <iframe width="80%" height="100%" src="https://www.instagram.com/p/Cdn9MgGI5uK/embed" frameborder="0"></iframe>
+          </div><br/>
+        </section>
+          <h2>Löydät meidät myös muista medioista!</h2>
+        <section id="somet">
+          <div id="linkit">
             <img alt="tiktok" src="img/somet/1200px-TikTok_logo.png" id = "tiktok"/>
             <img alt="facebook" src="img/somet/facebook.png" id = "facebook"/>
             <img alt="youtube" src="img/somet/youtube.png" id = "youtube"/>
             <img alt="twitter" src="img/somet/twitter.png"id = "twitter"/>
+          </div>
         </section>
         <section id="slogan">
           <div class="slogani">

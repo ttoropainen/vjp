@@ -52,7 +52,6 @@ a {
   flex-direction: column;
 }
 
-
 section {
   flex: none;
   justify-content: center;
@@ -130,7 +129,6 @@ nav ul {
   flex-basis: 100%;
 }
 
-
 #blogit {
   width: 100%;
   display: flex;
@@ -156,34 +154,6 @@ nav ul {
   font-size: 16px;
   border-radius: 5%;
   text-align: center;
-}
-
-#tiktok {
-  width: 22%;
-  position: relative;
-  left: 75vh;
-  top: 15vh;
-}
-
-#facebook {
-  width: 12%;
-  position: relative;
-  left: 80vh;
-  top: 5vh;
-}
-
-#youtube {
-  width: 20%;
-  position: relative;
-  left: 50vh;
-  top: 50vh;
-}
-
-#twitter {
-  width: 15%;
-  position: relative;
-  right: 25vh;
-  top: 45vh;
 }
 
 #slogan {
@@ -214,7 +184,6 @@ nav ul {
   text-shadow: 1px 6px 0px #e5e5e5;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  
 }
 @keyframes scale {
   100% {
@@ -222,7 +191,7 @@ nav ul {
   }
 }
 
-.slogan-span{
+.slogan-span {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
@@ -248,24 +217,23 @@ nav ul {
   animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-
-
 @keyframes fade-in {
   100% {
     opacity: 1;
     filter: blur(0);
-    
   }
 }
 
-@media only screen and (max-width: 980px) {
-  #blogit {
-    width: 100%;
-    display: block;
-  }
-  .blog {
-    width: 100%;
-  }
+#somet {
+  display: flex;
+}
+#ig {
+  width: 40%;
+  margin: 0 auto;
+  max-height: 800px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  float: left;
 }
 
 .blog h1 {
@@ -284,6 +252,7 @@ nav ul {
   border: none;
   color: rgb(0, 0, 0);
   padding: 7px 15px;
+  margin-bottom: 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -330,4 +299,96 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#linkit {
+  display: flex;
+  width: 60%;
+  min-height: 400px;
+  justify-content: space-around;
+}
+#linkit img {
+  display: block;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 980px) {
+  #linkit {
+    display: flex;
+    width: 60%;
+    min-height: 400px;
+    justify-content: space-around;
+  }
+  #linkit img {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  #ig {
+    width: 60%;
+    margin: 0 auto;
+    max-height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: left;
+  }
+  section {
+    flex: none;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    scroll-snap-align: center;
+    max-height: none;
+    max-width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    max-height: auto;
+  }
+  .quiz {
+    height: auto;
+    padding: 0;
+    margin-top: 100px;
+  }
+  .blog {
+    padding: 0px 0px;
+    width: 100%;
+  }
+  #blogit {
+    width: 80% !important;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    height: auto;
+    padding-top: 80px;
+  }
+  .textPieces {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #slogan {
+    background-image: url('../public/img/slogan/earth2.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+  }
 }
