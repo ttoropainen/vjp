@@ -62,7 +62,6 @@ function App() {
           <div class="slogani">
             <h1 id="slogan-text">Buy nice not twice.</h1>
           </div>
-          <img src="img/slogan/earth 2.svg"/>
         </section>
       </div>
       </header>
