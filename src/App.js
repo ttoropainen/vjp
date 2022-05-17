@@ -105,7 +105,13 @@ function App() {
         </section>
         <section id="slogan">
           <div class="slogani">
-            <h1 id="slogan-text">Buy nice not twice.</h1>
+            <h1>
+              <span class="slogan-span">Buy</span>
+              <span class="slogan-span">nice</span>
+              <span class="slogan-span">not</span>
+              <span class="slogan-span">twice</span>
+              <span class="slogan-span">.</span>
+            </h1>
           </div>
         </section>
       </div>
