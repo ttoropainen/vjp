@@ -23,8 +23,8 @@ function App() {
             <h2>VIHERPESUA VAI VASTUULLISUUTTA?</h2>
             <div>
               <iframe
-                width="853"
-                height="480"
+                width="100%"
+                height="100%"
                 src={`https://www.youtube.com/embed/9WGq040-yww`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -40,27 +40,25 @@ function App() {
           </div>
         </section>
         <section id="info">
-          <div className="container">
             <div className="textPieces">
-            <div className='info'>
+            <div>
                 <p style={{backgroundColor:'#628BC7'}}>Yksi T-paita</p>
                 <p>Tarvitsee valmistuakseen</p>
                 <span className="bold">2700</span>
                 <p>litraa vettä</p>
               </div>
-              <div className='info'>
+              <div>
                 <p style={{backgroundColor:'#86D3AD'}}>Vaateteollisuus aiheuttaa</p>
                 <p><span className="bold">10%</span> Maailman hiilidioksidipäästöistä</p>
                 <p><span className="bold">20%</span> Maailman jätevedestä</p>
                 <p><span className="bold">35%</span> Ympäristöön päästettävistä muovihiukkasista</p>
               </div><br/>
-              <div className='info'>
+              <div>
                 <p style={{backgroundColor:'#DA8C53'}}>JOS</p>
                 <p>Käytät <span className="bold">2x</span> pidempään</p>
                 <p>aiheutat <span className="bold">44%</span> vähemmän päästöjä</p>
               </div>
             </div>
-          </div>
         </section>
         <section id="blogit">
             <div class = "blog"> 

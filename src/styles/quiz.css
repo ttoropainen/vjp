@@ -28,6 +28,7 @@ body {
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   display: flex;
+  margin: 0 auto;
   border: 2px solid #ddd;
   justify-content: space-evenly;
 }
@@ -107,4 +108,31 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+@media only screen and (max-width: 980px) {
+  .app {
+    background-color: #000000;
+    width: 95%;
+    min-height: 300px;
+    height: min-content;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    border: 2px solid #ddd;
+    justify-content: space-evenly;
+  }
+  button {
+    width: 100%;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #5f6166;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #9aa0a7;
+    cursor: pointer;
+  }
 }

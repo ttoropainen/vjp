@@ -75,14 +75,14 @@ section {
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 ul {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -103,6 +103,8 @@ nav ul {
 .quiz {
   height: 100vh;
   padding: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container {
@@ -123,11 +125,8 @@ nav ul {
 .container iframe {
   border: 3px solid #fff;
   margin-top: 20px;
-}
-
-.info {
-  padding-top: 60px;
-  flex-basis: 100%;
+  min-width: 700px;
+  min-height: 400px;
 }
 
 #blogit {
@@ -217,7 +216,9 @@ nav ul {
 .slogan-span:nth-child(5) {
   animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
-
+#info {
+  height: 100vh;
+}
 @keyframes fade-in {
   100% {
     opacity: 1;
@@ -288,6 +289,12 @@ nav ul {
   align-items: flex-start;
 }
 
+.textPieces div {
+  padding-top: 60px;
+  flex-basis: 100%;
+  width: 33%;
+}
+
 .textPieces p {
   padding: 20px;
 }
@@ -300,11 +307,6 @@ nav ul {
   background-color: #fff;
   font-size: 45px;
   font-weight: bold;
-}
-.quiz {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #linkit {
@@ -320,12 +322,22 @@ nav ul {
   padding: 0 80px 0 80px;
 }
 
+#koti div h2 {
+  font-size: 54px;
+}
+
 @media only screen and (max-width: 980px) {
   #linkit {
     display: flex;
-    width: 60%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
     min-height: 400px;
     justify-content: space-around;
+  }
+  #somet2 {
+    display: flex;
+    max-height: none;
   }
   #linkit img {
     display: flex;
@@ -335,9 +347,9 @@ nav ul {
   }
 
   #ig {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    max-height: 700px;
+    max-height: 600px;
     overflow-y: scroll;
     overflow-x: hidden;
     float: left;
@@ -364,6 +376,11 @@ nav ul {
     height: auto;
     padding: 0;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
   }
   .blog {
     padding: 0px 0px;
@@ -379,22 +396,79 @@ nav ul {
   }
   .textPieces {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     height: auto;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+  }
+
+  .textPieces div {
+    padding-top: 60px;
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
   }
   #slogan {
     background-image: url('../public/img/slogan/earth2.svg');
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 70%;
     background-position: 50%;
     align-items: center;
     width: 100%;
     height: auto;
-    min-height: 500px;
+    margin-top: 60px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
+  }
+
+  .container iframe {
+    border: 3px solid #fff;
+    margin-top: 20px;
+    min-width: 100%;
+  }
+  #koti div h2 {
+    font-size: 27px;
+    width: 100%;
+  }
+  .App-header {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .App {
+    text-align: center;
+    max-width: 100vw;
+  }
+  #navigation {
+    position: fixed;
+    height: 60px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 0;
+    z-index: 6;
+    letter-spacing: 0;
+    font-size: 15px;
+    font-family: 'Open Sans';
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  #info {
+    height: auto;
+    min-height: 600px;
   }
 }
