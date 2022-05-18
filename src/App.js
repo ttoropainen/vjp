@@ -96,6 +96,9 @@ function App() {
             <a href='https://www.twitter.com/'><img alt="twitter" src="img/somet/twitter.png"id = "twitter"/></a>
           </div>
         </section>
+        <section id = "feedback">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScM9LLBF1FdnvfdxqbjtnYqdrag_84YTcsyI-AvAZ8py8mRRQ/viewform?embedded=true" width="100%" height="inherit" frameborder="0" marginheight="0" marginwidth="0">Ladataan…</iframe>
+        </section>
         <section id="slogan">
           <div class="slogani">
             <h1>

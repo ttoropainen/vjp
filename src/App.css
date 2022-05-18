@@ -326,6 +326,17 @@ nav ul {
   font-size: 54px;
 }
 
+#feedback {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#feedback iframe {
+  height: auto;
+  min-height: 600px;
+}
+
 @media only screen and (max-width: 980px) {
   #linkit {
     display: flex;
@@ -470,5 +481,14 @@ nav ul {
   #info {
     height: auto;
     min-height: 600px;
+  }
+  #feedback {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+  }
+
+  #feedback iframe {
+    height: 900px;
   }
 }
