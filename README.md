@@ -1,3 +1,11 @@
+# Yleisesti:
+
+Tämä on Ryhmä 12 VJP lopputyö, osoitteessa https://vjplopputyo.herokuapp.com
+React-sovelluksessa on interaktiivista sisältöä mm. Quiz-kysely, joka tallentaa ja laskee yhteen käyttäjän vastauksia Reactin useState-metodilla selaimen muistiin. Quiz-tuloksia ei kuitenkaan lähetetä eteenpäin mihinkään tietokantaan. Interaktiivisen sisällön logiikka on kommentoitu React-komponentteihin.
+Alla ohjeet yleisesti React-sovelluksen ajamiseen. Periaatteessa tämän repon koodin kloonauksen jälkeen tulee asentaa node_modules komennolla "npm i", jonka jälkeen sovellus käynnistyy komennolla "npm start" porttiin localhost:3000.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
